@@ -35,13 +35,13 @@ def main():
     os.system("cls")
 
     if menu == "1":
-        text = 'cryptography'
+        text = 'perwira dzakwan ramadhani'
         key = [3, 5]
         cipher = encrypt(text,key)
         print('Plain Text : ', text)
         print('Cipher Text : ', cipher)
     elif menu == "2":
-        text = 'LEZYKVXEFYAZ'
+        text = 'YRETDEFOCFJTFSEFPFOAFSD'
         key = [3, 5]
         decrypted = decrypt(text,key)
         print('Cipher Text : ', text)
