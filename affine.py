@@ -28,36 +28,26 @@ def decrypt(cipher, key):
 
 def main(): 
     print("==== Affine Chiper ====")
-    print("1. Encrypt")
-    print("2. Decrypt")
-    print("3. Exit")
+    print("1. Enkripsi")
+    print("2. Dekripsi")
     menu = input("Pilih menu : ")
 
     os.system("cls")
 
     if menu == "1":
-        text = 'PERWIRADZAKWANRAMADHANI'
+        text = 'cryptography'
         key = [3, 5]
-        encrypt(text,key)
+        cipher = encrypt(text,key)
+        print('Plain Text : ', text)
+        print('Cipher Text : ', cipher)
     elif menu == "2":
-        text = 'YRETDEFOCFJTFSEFPFOAFSD'
+        text = 'LEZYKVXEFYAZ'
         key = [3, 5]
-        decrypt(text,key)
-    elif menu == "3":
-        exit()
+        decrypted = decrypt(text,key)
+        print('Cipher Text : ', text)
+        print('Plain Text : ', decrypted)
     else:
         print("Menu tidak tersedia")
-#   text = 'YRETDEFOCFJTFSEFPFOAFSD'
-#   key = [3, 5] 
-
-#   enc_text = encrypt(text, key) #memanggil fungsi enkripsi
-#   dec_text = decrypt(text, key) #memanggil fungsi dekripsi
-
-#   print('Plain Text : ', text)
-#   print('Encrypted Text: {}'.format(enc_text)) 
-#   print('Decrypted Text: {}'.format(dec_text))
-
-
 
 
 if __name__ == '__main__': 
